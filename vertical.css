@@ -1,0 +1,54 @@
+html {
+	transform: rotate(90deg);
+}
+
+h1, h2 {
+	transform: rotate(-90deg);
+}
+
+.title-screen {
+	width: 100vw;
+  height: 100vh;
+	transform: rotate(90deg);
+}
+
+.title-screen h1 {
+	transform: rotate(-180deg) !important;
+	position: absolute;
+	bottom: 100px;
+}
+
+.about-this {
+	transform: rotate(-90deg);
+	bottom: 50%;
+	right: 0;
+	text-align: center;
+}
+
+.scroll-this-way {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transform: rotate(-90deg);
+}
+
+.scroll-this-way span {
+	position: absolute;
+	transform: translate(0, -100%) rotate(-90deg);
+}
+
+.wealth > .wealth-title {
+  flex-basis: unset;
+}
+
+.wealth {
+	display: flex;
+}
+.wealth-title {
+	align-self: unset;
+}
+
+.title {
+	transform: rotate(-90deg) !important;
+
+}

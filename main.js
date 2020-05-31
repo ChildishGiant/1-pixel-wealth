@@ -20,6 +20,8 @@ var money = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
 });
 
+var direction = 'horizontal';
+
 //todo: also work for 400 richest
 window.addEventListener('scroll', function(){
   update_wealth_counter();
@@ -86,3 +88,11 @@ function update_wealth_counter() {
 function toggleZoom() {
   document.getElementById('line-chart').classList.toggle('zoom');
 }
+
+function toggle_scroll_dir() {
+  direction = direction == 'horizontal' ? 'vertical'  : 'horizontal';
+
+  document.styleSheets[1].disabled = direction == 'horizontal' ? true  : false;
+}
+
+document.styleSheets[1].disabled = true;
